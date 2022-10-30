@@ -49,7 +49,8 @@ fun ItemsGrid(/* numbers: List<Int>*/listViewModel: HomeViewModel) {
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         LazyVerticalGrid(
-            cells = GridCells.Fixed(numbersAmount)
+            cells = GridCells.Fixed(numbersAmount),
+            modifier = Modifier.weight(0.9F)
 
         ) {
             items(numbers.size){ index ->
@@ -75,7 +76,7 @@ fun ItemsGrid(/* numbers: List<Int>*/listViewModel: HomeViewModel) {
             }
         }
         Button(onClick = {listViewModel.addElement()},
-            modifier = Modifier.size(integerResource(id = R.integer.ButtonSize).dp)) {
+            modifier = Modifier.size(integerResource(id = R.integer.ButtonSize).dp).weight(0.1F)) {
         }
     }
 }

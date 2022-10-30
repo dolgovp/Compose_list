@@ -63,7 +63,7 @@ fun ItemsGrid(listViewModel: HomeViewModel) {
 fun MakeBox(color: Color, number: Int){
     val boxModifier = Modifier
         .padding(BoxPadding.dp)
-        .size(NumberBoxSize.dp)
+        .requiredSize(NumberBoxSize.dp)
     Box(
         boxModifier
             .background(color),

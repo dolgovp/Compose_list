@@ -1,7 +1,7 @@
 package com.example.composelist.ui.theme
 
-const val NumberBoxSize = 50
-const val ButtonSize = 50
+const val NumberBoxSize = 100
+const val ButtonSize = 48
 const val GridLandscapeWeight = 0.8F
 const val GridPortraitWeight = 0.9F
 const val BtnLandscapeWeight = 0.2F
